@@ -13,18 +13,21 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; }
+        h1 { color: #2c3e50; font-size: 24px; }
+        h2 { color: #34495e; font-size: 20px; }
         .chart-placeholder {
             background-color: #f0f0f0;
             border: 1px solid #ddd;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 20px;
             margin: 20px 0;
+            text-align: center;
         }
         .source { margin-top: 40px; font-style: italic; }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            h1 { font-size: 20px; }
+            h2 { font-size: 18px; }
+        }
     </style>
 </head>
 <body>
@@ -35,28 +38,35 @@
     <ol>
         <li>
             <p>Se identificaron cuatro grupos distintos de percepciones hacia China:</p>
-            <div class="chart-placeholder">Gráfico 1: Distribución de grupos de percepción</div>
-            <ul>
-                <li>Pro China: 22% - Percepción positiva en todas las dimensiones</li>
-                <li>Pro China no militar: 43% - Positiva en lo relacional y comercial, pero no en lo militar</li>
-                <li>No China relacional: 16% - Percepción negativa general, especialmente en lo militar</li>
-                <li>No China comercial: 19% - Negativa en general, pero algo más positiva en lo comercial</li>
-            </ul>
+            <div class="chart-placeholder">
+                <p><strong>Gráfico 1: Distribución de grupos de percepción</strong></p>
+                <ul style="text-align: left;">
+                    <li>Pro China: 22% - Percepción positiva en todas las dimensiones</li>
+                    <li>Pro China no militar: 43% - Positiva en lo relacional y comercial, pero no en lo militar</li>
+                    <li>No China relacional: 16% - Percepción negativa general, especialmente en lo militar</li>
+                    <li>No China comercial: 19% - Negativa en general, pero algo más positiva en lo comercial</li>
+                </ul>
+            </div>
         </li>
         <li>
             <p>Se observaron variaciones entre países en cuanto al apoyo a China:</p>
-            <div class="chart-placeholder">Gráfico 2: Nivel de apoyo a China por país</div>
-            <p>Los países con mayor apoyo incluyen Nicaragua, Panamá y República Dominicana, mientras que los de menor apoyo incluyen Colombia, Ecuador y Bolivia.</p>
+            <div class="chart-placeholder">
+                <p><strong>Gráfico 2: Nivel de apoyo a China por país</strong></p>
+                <p>Mayor apoyo: Nicaragua, Panamá, República Dominicana</p>
+                <p>Menor apoyo: Colombia, Ecuador, Bolivia</p>
+            </div>
         </li>
         <li>
             <p>Factores asociados a percepciones más positivas de China:</p>
-            <div class="chart-placeholder">Gráfico 3: Factores asociados a percepciones de China</div>
-            <ul>
-                <li>Menor apoyo a la producción nacional</li>
-                <li>Menor apoyo a la economía de mercado</li>
-                <li>Menor apoyo a la democracia</li>
-                <li>Mayor percepción de que el país tiene un ingreso social justo</li>
-            </ul>
+            <div class="chart-placeholder">
+                <p><strong>Gráfico 3: Factores asociados a percepciones de China</strong></p>
+                <ul style="text-align: left;">
+                    <li>Menor apoyo a la producción nacional</li>
+                    <li>Menor apoyo a la economía de mercado</li>
+                    <li>Menor apoyo a la democracia</li>
+                    <li>Mayor percepción de que el país tiene un ingreso social justo</li>
+                </ul>
+            </div>
         </li>
     </ol>
 
